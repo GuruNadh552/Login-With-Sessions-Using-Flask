@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+</head>
+<body>
+{% block content %}
+	<form method="POST" action="{{ url_for('login') }}">
+		<input type="text" name="uname" placeholder="Enter Name">
+		<input type="submit" name="submit" value="submit">
+	</form>
+	<br>
+{% endblock content %}
+</body>
+</html>
